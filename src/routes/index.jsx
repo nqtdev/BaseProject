@@ -7,16 +7,14 @@ const Routers = createBrowserRouter([
   {
     path: '/',
     element: <Layout />,
-    children: [
-      {
-        path: '/dashboard',
-        element: <DashBoard />,
-      },
-      {
-        path: '/*',
-        element: <ErrorPage />,
-      },
-    ],
+  },
+  {
+    path: '/dashboard',
+    element: <DashBoard />,
+  },
+  {
+    path: '/*',
+    element: <ErrorPage />,
   },
 ])
 export default Routers
