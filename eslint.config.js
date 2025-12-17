@@ -43,7 +43,7 @@ export default [
 
       // --- React Rules ---
       ...react.configs.recommended.rules,
-      ...react.configs['jsx-runtime'].rules, // Đã sửa lỗi cú pháp tại đây
+      ...react.configs['jsx-runtime'].rules,
       'react/prop-types': 'off',
       'react/jsx-no-target-blank': 'off',
 
