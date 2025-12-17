@@ -1,10 +1,19 @@
-# EditorConfig giúp duy trì định dạng nhất quán giữa các công cụ và trình chỉnh sửa.
 root = true
+
+# Cấu hình chung cho TẤT CẢ các file
 [*]
-end_of_line = lf
 charset = utf-8
 indent_style = space
 indent_size = 2
-tab_width = 2
-trim_trailing_whitespace = true
+end_of_line = lf
 insert_final_newline = true
+trim_trailing_whitespace = true
+
+# Cấu hình riêng cho file Markdown (cần khoảng trắng cuối dòng để xuống dòng)
+[*.md]
+trim_trailing_whitespace = false
+
+# Cấu hình cho file Bash script (nếu có dùng Docker/Linux)
+[*.{sh,bash}]
+end_of_line = lf
+indent_size = 4
